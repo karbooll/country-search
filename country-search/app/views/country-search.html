@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <search-input search="getCountries" label="Country" model="selectedCountry" on-selected="onCountrySelected"></search-input>
+        </div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-4">
+            <div class="row">
+                <div class="col-xs-12">
+                    <strong>Selected countries:</strong>
+                    <ul>
+                        <li ng-repeat="country in selectedCountries">
+                            <span class="country-item">{{country.name}}</span><span class="hand glyphicon glyphicon-remove"
+                                ng-click="remove(country)"></span>
+                        </li>
+                    </ul>
+                    <span ng-if="!selectedCountries.length">(None yet)</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button ng-if="selectedCountries.length" type="submit" class="btn btn-default" ng-click="send()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

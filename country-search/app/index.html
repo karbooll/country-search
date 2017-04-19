@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="CountrySearch">
+
+<head>
+    <title>Country Search</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/countrysearch.css">
+    <link rel="stylesheet" href="../assets/css/toastr.min.css">
+</head>
+
+<body>
+    <div class="container" style="margin-top: 1em">
+        <div class="page-header">
+            <h2>Country search</h2>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div ng-view></div>
+            </div>            
+        </div>
+        <script src="../assets/libs/angular.js"></script>
+        <script src="../assets/libs/angular-route.js"></script>
+        <script src="../assets/libs/ui-bootstrap-tpls-2.5.0.js"></script>
+        <script src="../assets/libs/jquery-3.2.1.min.js"></script>
+        <script src="../assets/libs/bootstrap.min.js"></script>
+        <script src="../assets/libs/lodash.min.js"></script>
+        <script src="../assets/libs/toastr.min.js"></script>
+        <script src="./app.js"></script>
+        <script src="./app.route.js"></script>
+        <script src="./controllers/country-search-controller.js"></script>
+        <script src="./services/country-search-service.js"></script>
+        <script src="./directives/search-input.js"></script>
+</body>
+
+</html>
